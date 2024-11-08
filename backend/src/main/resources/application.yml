@@ -11,8 +11,14 @@ spring:
     properties:
       hibernate:
         constraint-creation: false
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
 ojKey:
   private: MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAIVpxoA3ZJmfxNx3BpF5HJ6CZIikMgWAHgvOjXVQaU1UydC7k53J12uQku/iOMqs0vOvicT8Dnxrp36x/GC7ottITlELfc3kclWgzZisIZA+rVKgy7Kvs44AbrM2m89vTBKjJ5fSFofkXgemfUCBLJ4XioUr0nfve5UxYYtCd2V9AgMBAAECgYAXYenQtISs+SfRZQoRaorlzCAvI6oBtUnu01GPJ1wBWfQyIYIWhFb9av4ZzYobGY2yeIharjuiumKFjc/YK2K4L8HZBGBiE4GVig7u3Ab9L5y29pptF8sFjlqNMxh2dTj21ylVwpPlQ/Fo7OjE3f2pIfU1Pjl4idlXGIdtdEYRMQJBAL+qhPUN2I5+11KA7MhUUUB2fkCwveFq3eYZjFDhALTrAKh40Sa+eKlKZvDByeKDFZD/H1fwjZF5ZhlVysmF/q0CQQCyMbOIb0S7X1u+8mGHR0sXx7mBnIl/ZnkT5+W4Rro1UDPnUnUTn7HwVk8z8TFBVpT8ukZrpQJNbegFnoKMMuwRAkEAt84OXXdewyBu3AcZi/AYT4qS/vS/06oJjP3ZK0Lry5RGeEoMwWwOCMN6Ps6JDfmJuBiBdXMSQH08ZXV52JLwrQJANSlexnVrq/rnBDCLqDA81vte/KwW2UtZE/c7MZ7oLr+evIR9KT2beHhHaNesOjH6gOuR1suDxFXlwsdnayxGAQJAUBEkHeik49RC7cMwHjhhJbe6jreCbLUHyYjciEbLz5IZxAn9Zik33Jk4VyHEfOZrlpBc7n9YeyjWWGQjkAhvpA==
   public: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCFacaAN2SZn8TcdwaReRyegmSIpDIFgB4Lzo11UGlNVMnQu5OdyddrkJLv4jjKrNLzr4nE/A58a6d+sfxgu6LbSE5RC33N5HJVoM2YrCGQPq1SoMuyr7OOAG6zNpvPb0wSoyeX0haH5F4Hpn1AgSyeF4qFK9J373uVMWGLQndlfQIDAQAB
 server:
   port: 9000
+sa-token:
+  jwt-secret-key: asdkjgakjshdgkhjklasdasd

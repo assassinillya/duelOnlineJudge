@@ -15,6 +15,7 @@ public class AESUtil {
         return SaSecureUtil.aesEncrypt(publicKey, pwd);
     }
 
+    // 未加密密码   加密后密码
     public boolean checkPwd(String pwd, String pwd2) {
         return SaSecureUtil.aesEncrypt(publicKey, pwd).equals(pwd2);
     }
