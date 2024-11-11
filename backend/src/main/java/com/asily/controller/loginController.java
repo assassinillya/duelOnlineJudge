@@ -1,5 +1,6 @@
 package com.asily.controller;
 
+import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
 import com.asily.entity.User;
@@ -54,6 +55,7 @@ public class loginController {
     }
 
     // 查询登录状态
+    @SaCheckLogin
     @RequestMapping("isLogin")
     public SaResult isLogin(@RequestBody User requestUser) {
         // 测试接口
@@ -61,12 +63,12 @@ public class loginController {
     }
 
     // 查询 Token 信息
+    @SaCheckLogin
     @RequestMapping("tokenInfo")
     public SaResult tokenInfo(@RequestBody User requestUser) {
-        StpUtil.
-                StpUtil.getTokenInfo();
+
         // 测试接口
-        return SaResult.data();
+        return SaResult.data(StpUtil.getTokenInfo());
     }
 
     // 测试注销  ---- /logout
