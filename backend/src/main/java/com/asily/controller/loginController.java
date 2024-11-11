@@ -55,7 +55,6 @@ public class loginController {
     }
 
     // 查询登录状态
-    @SaCheckLogin
     @RequestMapping("isLogin")
     public SaResult isLogin(@RequestBody User requestUser) {
         // 测试接口
