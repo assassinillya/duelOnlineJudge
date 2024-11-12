@@ -1,9 +1,9 @@
 package com.asily.service.impl;
 
+import com.asily.components.AESUtil;
 import com.asily.entity.User;
 import com.asily.mapper.UserMapper;
 import com.asily.service.AuthService;
-import com.asily.utils.AESUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import jakarta.annotation.Resource;
 import jakarta.transaction.Transactional;

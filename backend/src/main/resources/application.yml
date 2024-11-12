@@ -27,3 +27,7 @@ sa-token:
   is-log: true
   is-share: true
   token-style: uuid
+crawler:
+  command: C:\Users\Assas\AppData\Local\Programs\Python\Python313\python.exe
+  path: C:\project\duelOnlineJudge\backend\src\main\java\com\asily\utils\
+  sys: Windows

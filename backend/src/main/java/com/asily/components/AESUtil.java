@@ -1,4 +1,4 @@
-package com.asily.utils;
+package com.asily.components;
 
 
 import cn.dev33.satoken.secure.SaSecureUtil;

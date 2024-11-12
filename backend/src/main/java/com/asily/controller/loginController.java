@@ -3,9 +3,9 @@ package com.asily.controller;
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
+import com.asily.components.AESUtil;
 import com.asily.entity.User;
 import com.asily.service.AuthService;
-import com.asily.utils.AESUtil;
 import com.asily.utils.HTTPResponse;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -58,7 +58,7 @@ public class loginController {
     @RequestMapping("isLogin")
     public SaResult isLogin(@RequestBody User requestUser) {
         // 测试接口
-        return SaResult.ok("是否登录：" + StpUtil.isLogin(requestUser.getUserId()));
+        return SaResult.ok("是否登录：" + StpUtil.isLogin(requestUser.getUserId() + ", 用户id:" + StpUtil.getLoginId()));
     }
 
     // 查询 Token 信息
