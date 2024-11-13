@@ -3,6 +3,7 @@ package com.asily;
 import cn.dev33.satoken.secure.SaSecureUtil;
 import com.asily.components.AESUtil;
 import com.asily.components.CrawlRunner;
+import com.asily.utils.StringUtil;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
@@ -26,6 +27,17 @@ class BackendApplicationTests {
 
     @Autowired
     private CrawlRunner crawler;
+
+//    @Autowired
+//    private StringUtil s;
+
+    @Test
+    void testString() {
+        StringUtil s = new StringUtil();
+//        System.out.println(Arrays.toString(s.splitString("1351D")));
+        String[] strings = s.splitString("1351D2");
+        System.out.println(strings[0] + " " + strings[1]);
+    }
 
     @Test
     void contextLoads() throws Exception {

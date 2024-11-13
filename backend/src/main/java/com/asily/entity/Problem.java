@@ -11,6 +11,8 @@ public class Problem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer problemId;
 
+    private String cfId;
+
     private String title;
 
     private String difficulty;
